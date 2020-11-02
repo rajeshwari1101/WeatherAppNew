@@ -1,0 +1,68 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.survivingwithandroid.weatherapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->G:\AndroidUtility\WeatherApp\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->G:\AndroidUtility\WeatherApp\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->G:\AndroidUtility\WeatherApp\app\src\main\AndroidManifest.xml:8:5-66
+11-->G:\AndroidUtility\WeatherApp\app\src\main\AndroidManifest.xml:8:22-64
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->G:\AndroidUtility\WeatherApp\app\src\main\AndroidManifest.xml:9:5-79
+12-->G:\AndroidUtility\WeatherApp\app\src\main\AndroidManifest.xml:9:22-76
+13
+14    <application
+14-->G:\AndroidUtility\WeatherApp\app\src\main\AndroidManifest.xml:11:5-34:19
+15        android:allowBackup="true"
+15-->G:\AndroidUtility\WeatherApp\app\src\main\AndroidManifest.xml:12:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.0.0] C:\Users\sspl\.gradle\caches\transforms-2\files-2.1\246153fc0686d4ff78c8961ca91329b7\core-1.0.0\AndroidManifest.xml:22:18-86
+17        android:icon="@drawable/ic_launcher"
+17-->G:\AndroidUtility\WeatherApp\app\src\main\AndroidManifest.xml:13:9-45
+18        android:label="@string/app_name"
+18-->G:\AndroidUtility\WeatherApp\app\src\main\AndroidManifest.xml:14:9-41
+19        android:networkSecurityConfig="@xml/network_security_config"
+19-->G:\AndroidUtility\WeatherApp\app\src\main\AndroidManifest.xml:15:9-69
+20        android:theme="@style/AppTheme"
+20-->G:\AndroidUtility\WeatherApp\app\src\main\AndroidManifest.xml:17:9-40
+21        android:usesCleartextTraffic="true" >
+21-->G:\AndroidUtility\WeatherApp\app\src\main\AndroidManifest.xml:16:9-44
+22        <activity
+22-->G:\AndroidUtility\WeatherApp\app\src\main\AndroidManifest.xml:18:9-26:20
+23            android:name="com.survivingwithandroid.weatherapp.MainActivity"
+23-->G:\AndroidUtility\WeatherApp\app\src\main\AndroidManifest.xml:19:13-76
+24            android:label="@string/app_name" >
+24-->G:\AndroidUtility\WeatherApp\app\src\main\AndroidManifest.xml:20:13-45
+25            <intent-filter>
+25-->G:\AndroidUtility\WeatherApp\app\src\main\AndroidManifest.xml:21:13-25:29
+26                <action android:name="android.intent.action.MAIN" />
+26-->G:\AndroidUtility\WeatherApp\app\src\main\AndroidManifest.xml:22:17-69
+26-->G:\AndroidUtility\WeatherApp\app\src\main\AndroidManifest.xml:22:25-66
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->G:\AndroidUtility\WeatherApp\app\src\main\AndroidManifest.xml:24:17-77
+28-->G:\AndroidUtility\WeatherApp\app\src\main\AndroidManifest.xml:24:27-74
+29            </intent-filter>
+30        </activity>
+31        <activity
+31-->G:\AndroidUtility\WeatherApp\app\src\main\AndroidManifest.xml:27:9-29:58
+32            android:name="com.survivingwithandroid.weatherapp.LineChartDisplay"
+32-->G:\AndroidUtility\WeatherApp\app\src\main\AndroidManifest.xml:28:13-80
+33            android:label="@string/app_name" />
+33-->G:\AndroidUtility\WeatherApp\app\src\main\AndroidManifest.xml:29:13-45
+34        <activity
+34-->G:\AndroidUtility\WeatherApp\app\src\main\AndroidManifest.xml:30:9-33:20
+35            android:name="com.survivingwithandroid.weatherapp.TableViewDisplay"
+35-->G:\AndroidUtility\WeatherApp\app\src\main\AndroidManifest.xml:31:13-80
+36            android:label="@string/app_name" >
+36-->G:\AndroidUtility\WeatherApp\app\src\main\AndroidManifest.xml:32:13-45
+37        </activity>
+38    </application>
+39
+40</manifest>

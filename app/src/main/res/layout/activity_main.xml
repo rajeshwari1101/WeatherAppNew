@@ -1,0 +1,316 @@
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/activity_vertical_margin"
+
+    tools:context=".MainActivity">
+    <androidx.cardview.widget.CardView
+        android:padding="@dimen/activity_vertical_margin"
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="15dp"
+        card_view:cardElevation="15dp"
+        card_view:cardCornerRadius="22dp"
+        android:layout_margin="10dp"
+        android:background="#fff"
+        >
+
+        <RelativeLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:padding="@dimen/activity_vertical_margin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+    <TextView
+        android:id="@+id/scity"
+        android:text="@string/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          />
+    <EditText
+        android:id="@+id/city"
+        android:layout_marginBottom="10dp"
+        style="?android:attr/textAppearanceMedium"
+        android:layout_toRightOf="@id/scity"
+        android:layout_width="match_parent"
+        android:layout_marginRight="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/text_rounded"
+        android:layout_height="30dp"
+          />
+    <Button
+        android:id="@+id/search"
+        android:layout_marginBottom="20dp"
+        style="?android:attr/textAppearanceMedium"
+        android:layout_below="@id/city"
+        android:text="Search City"
+        android:background="@drawable/button_rounded"
+        android:layout_width="125dp"
+        android:layout_height="35dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        />
+            <TextView
+                android:id="@+id/latitude"
+                android:text="@string/search"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/search"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:padding="@dimen/activity_vertical_margin"
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="15dp"
+
+        card_view:cardElevation="15dp"
+        card_view:cardCornerRadius="22dp"
+        android:layout_margin="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="@dimen/activity_vertical_margin"
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+    <TextView
+        android:id="@+id/cityText"
+        style="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
+         />
+
+    <ImageView
+        android:id="@+id/condIcon"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/cityText" />
+
+    <TextView
+        android:id="@+id/condDescr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityText"
+
+       />
+
+    <TextView
+        android:id="@+id/temp"
+        style="@style/tempStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/condDescr"/>
+            <TextView
+                android:id="@+id/min"
+                style="@style/tempStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@id/temp"/>
+            <TextView
+                android:id="@+id/max"
+                style="@style/tempStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@id/min"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:background="#fff"
+        android:padding="@dimen/activity_vertical_margin"
+        android:id="@+id/card3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="15dp"
+        card_view:cardElevation="15dp"
+        card_view:cardCornerRadius="22dp"
+        android:layout_margin="10dp"
+        >
+
+    <RelativeLayout
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:padding="@dimen/activity_vertical_margin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:text="Show More Detals"
+        android:textOff="Show Details"
+        android:textOn="Hide Details"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/graph"
+
+            style="?android:attr/textAppearanceMedium"
+            android:layout_toRightOf="@id/toggleButton"
+            android:text="Graph"
+            android:background="@drawable/button_rounded"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            />
+        <Button
+            android:id="@+id/table"
+            android:layout_marginBottom="20dp"
+            style="?android:attr/textAppearanceMedium"
+            android:layout_toRightOf="@id/graph"
+            android:text="Table"
+            android:background="@drawable/button_rounded"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card4"
+        android:background="#fff"
+        android:padding="@dimen/activity_vertical_margin"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="15dp"
+        card_view:cardElevation="15dp"
+        card_view:cardCornerRadius="22dp"
+        android:layout_margin="10dp"
+        >
+
+        <RelativeLayout
+            android:padding="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+    <TextView
+        android:id="@+id/pressLab"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+
+        android:text="Pressure"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/press"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/pressLab"
+        android:layout_toRightOf="@id/pressLab" 
+        style="@style/valData"/>
+
+    <TextView
+        android:id="@+id/humLab"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/pressLab"
+        android:text="Humidity" />
+
+    <TextView
+        android:id="@+id/hum"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/humLab"
+        android:layout_toRightOf="@id/humLab" 
+        android:layout_marginLeft="4dp"
+        style="@style/valData"/>
+
+    <TextView
+        android:id="@+id/windLab"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/humLab"
+        android:text="Wind" />
+
+    <TextView
+        android:id="@+id/windSpeed"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/windLab"
+        android:layout_toRightOf="@id/windLab"
+        android:layout_marginLeft="4dp"
+        style="@style/valData" />
+
+    <TextView
+        android:id="@+id/windDeg"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/windLab"
+        android:layout_toRightOf="@id/windSpeed"
+        android:layout_marginLeft="4dp" 
+        style="@style/valData"/>
+
+            <TextView
+                android:id="@+id/sunrise"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginLeft="4dp"
+                android:layout_below="@id/windLab"
+                style="@style/valData" />
+            <TextView
+                android:id="@+id/sunset"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="4dp"
+                android:layout_below="@id/sunrise"
+                style="@style/valData" />
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

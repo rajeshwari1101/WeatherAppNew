@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.tima2557791:SortableTableView:2.4.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/aa9597f5e67d5f04424ec71ca3ecf2f1/jetified-SortableTableView-2.4.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/aa9597f5e67d5f04424ec71ca3ecf2f1/jetified-SortableTableView-2.4.2/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.tima2557791/SortableTableView/2.4.2/df4ee0e47223e842609d3d167c35be9dc5405a38/SortableTableView-2.4.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.tima2557791/SortableTableView/2.4.2/bf8a656de9526fbf3992bcd47f25cdbc0dec13b3/SortableTableView-2.4.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
